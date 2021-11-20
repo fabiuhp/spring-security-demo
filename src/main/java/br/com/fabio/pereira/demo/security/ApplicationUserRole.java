@@ -8,6 +8,7 @@ import static br.com.fabio.pereira.demo.security.ApplicationUserPermission.*;
 
 public enum ApplicationUserRole {
     ADMIN(Sets.newHashSet(COURSE_READ, COURSE_WRITE, STUDENT_READ, STUDENT_WRITE)),
+    ADMINTREINEE(Sets.newHashSet(COURSE_READ, STUDENT_READ)),
     STUDENT(Sets.newHashSet());
 
     private final Set<ApplicationUserPermission> permissions;
