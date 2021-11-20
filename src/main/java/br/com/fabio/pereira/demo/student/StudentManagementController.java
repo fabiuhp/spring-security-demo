@@ -29,7 +29,7 @@ public class StudentManagementController {
         System.out.println(studentId);
     }
 
-    @PatchMapping("{studentId}")
+    @PutMapping("{studentId}")
     public void updateStudent(@PathVariable Integer studentId, @RequestBody Student student) {
         System.out.printf("%s %s%n", studentId, student);
     }
